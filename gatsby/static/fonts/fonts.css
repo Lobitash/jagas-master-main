@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "regular";
+  src: url("Gotham-Light.otf");
+  font-display: block;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "bold";
+  src: url("Gotham-Medium.otf");
+  font-display: block;
+  font-weight: 700;
+}

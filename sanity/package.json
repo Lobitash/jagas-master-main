@@ -1,0 +1,35 @@
+{
+  "name": "flightdigitalstarter",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "package.json",
+  "author": "taulal <taylorabernethynewman@gmail.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "sanity start",
+    "test": "sanity check",
+    "graph:deploy": "sanity graphql deploy --no-playground",
+    "graph:deploy:dev": "sanity graphql deploy --dataset development",
+    "deploy": "sanity deploy",
+    "graph:list": "sanity graphql list"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@sanity/base": "^2.3.6",
+    "@sanity/components": "^2.2.6",
+    "@sanity/core": "^2.3.3",
+    "@sanity/default-layout": "^2.3.6",
+    "@sanity/default-login": "^2.2.6",
+    "@sanity/desk-tool": "^2.3.6",
+    "@sanity/production-preview": "^2.2.6",
+    "@sanity/vision": "^2.2.6",
+    "prop-types": "^15.6",
+    "react": "^16.2",
+    "react-dom": "^16.2",
+    "react-icons": "^3.10.0"
+  },
+  "devDependencies": {}
+}

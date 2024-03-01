@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    /* Visit https://aka.ms/tsconfig.json to read more about this file */
+    "target": "esnext" /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', or 'ESNEXT'. */,
+    "lib": ["es6", "dom"],
+    // "allowJs": true /* Allow javascript files to be compiled. */,
+    // "checkJs": true /* Report errors in .js files. */,
+    "strict": true /* Enable all strict type-checking options. */,
+    "noImplicitAny": true /* Raise error on expressions and declarations with an implied 'any' type. */,
+    "strictNullChecks": true /* Enable strict null checks. */,
+    /* Additional Checks */
+    "noUnusedLocals": true /* Report errors on unused locals. */,
+    "noUnusedParameters": true /* Report errors on unused parameters. */,
+    "noImplicitReturns": true /* Report error when not all code paths in function return a value. */,
+    /* Module Resolution Options */
+    "typeRoots": [
+      "./types",
+      "./node_modules/@types"
+    ] /* List of folders to include type definitions from. */,
+    "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
+    /* Advanced Options */
+    "skipLibCheck": true /* Skip type checking of declaration files. */,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "@sub": ["src/components/shared/sub/index"],
+      "@components/*": ["src/components/*"],
+      "@shared/*": ["src/components/shared/*"],
+      "@lib/*": ["src/lib/*"],
+      "@pages/*": ["src/pages/*"],
+      "@util/*": ["src/util/*"],
+      "@static/*": ["static/*"],
+      "@graphql-types": ["graphql-types"],
+      "@assets/*": ["assets/*"],
+      "@types/*": ["@types/block-content-to-react.d.ts"]
+    }
+  },
+  "exclude": ["node_modules", "typings"]
+}

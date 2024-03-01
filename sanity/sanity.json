@@ -1,0 +1,39 @@
+{
+  "root": true,
+  "api": {
+    "projectId": "za0f67w0",
+    "dataset": "production"
+  },
+  "project": {
+    "name": "Jagas"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/components",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/production-preview",
+    "@sanity/desk-tool"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "@sanity/vision"
+      ]
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    },
+    {
+      "name": "part:@sanity/desk-tool/structure",
+      "path": "./src/deskStructure/index.js"
+    },
+    {
+      "implements": "part:@sanity/production-preview/resolve-production-url",
+      "path": "./resolveProductionUrl.js"
+    }
+  ]
+}
